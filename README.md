@@ -1,9 +1,9 @@
 github-action-contributors
 ===
 
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://idimetrix.github.io/#/sponsor)
-[![Build & Deploy](https://github.com/idimetrix/github-action-contributors/actions/workflows/ci.yml/badge.svg)](https://github.com/idimetrix/github-action-contributors/actions/workflows/ci.yml)
-[![Repo Dependents](https://badgen.net/github/dependents-repo/idimetrix/github-action-contributors)](https://github.com/idimetrix/github-action-contributors/network/dependents)
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://hi-tech-AI.github.io/#/sponsor)
+[![Build & Deploy](https://github.com/hi-tech-AI/github-action-contributors/actions/workflows/ci.yml/badge.svg)](https://github.com/hi-tech-AI/github-action-contributors/actions/workflows/ci.yml)
+[![Repo Dependents](https://badgen.net/github/dependents-repo/hi-tech-AI/github-action-contributors)](https://github.com/hi-tech-AI/github-action-contributors/network/dependents)
 
 Github action generates dynamic image URL for contributor list to display it!
 
@@ -13,8 +13,8 @@ The contributors list is fetched from [GitHub API](https://docs.github.com/cn/re
 
 As always, thanks to our amazing contributors!
 
-<a href="https://github.com/idimetrix/github-action-contributors/graphs/contributors">
-  <img src="https://idimetrix.github.io/github-action-contributors/CONTRIBUTORS.svg" />
+<a href="https://github.com/hi-tech-AI/github-action-contributors/graphs/contributors">
+  <img src="https://hi-tech-AI.github.io/github-action-contributors/CONTRIBUTORS.svg" />
 </a>
 
 Write contributors(**`htmlTable`**) to markdown Example:
@@ -38,7 +38,7 @@ Write contributors(**`htmlList`**) to markdown Example:
 ```yml
 - run: mkdir -p build
 - name: Generate Contributors Images
-  uses: idimetrix/github-action-contributors@main
+  uses: hi-tech-AI/github-action-contributors@main
   with:
     filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
     output: build/CONTRIBUTORS.svg
@@ -52,7 +52,7 @@ Write contributors(**`htmlList`**) to markdown Example:
 ```
 
 ```
-https://idimetrix.github.io/github-action-contributors/CONTRIBUTORS.svg
+https://hi-tech-AI.github.io/github-action-contributors/CONTRIBUTORS.svg
 ```
 
 Use in markdown
@@ -62,29 +62,29 @@ Use in markdown
 
 As always, thanks to our amazing contributors!
 
-<a href="https://github.com/idimetrix/github-action-contributors/graphs/contributors">
-  <img src="https://idimetrix.github.io/github-action-contributors/CONTRIBUTORS.svg" />
+<a href="https://github.com/hi-tech-AI/github-action-contributors/graphs/contributors">
+  <img src="https://hi-tech-AI.github.io/github-action-contributors/CONTRIBUTORS.svg" />
 </a>
 
-Made with [contributors](https://github.com/idimetrix/github-action-contributors).
+Made with [contributors](https://github.com/hi-tech-AI/github-action-contributors).
 ```
 
-<a href="https://github.com/idimetrix/github-action-contributors/graphs/contributors">
-  <img src="https://idimetrix.github.io/github-action-contributors/CONTRIBUTORS.svg" />
+<a href="https://github.com/hi-tech-AI/github-action-contributors/graphs/contributors">
+  <img src="https://hi-tech-AI.github.io/github-action-contributors/CONTRIBUTORS.svg" />
 </a>
 
 ### Write contributors(**`htmlList`**) to markdown
 
 ```yml
 - name: Generate Contributors Images
-  uses: idimetrix/github-action-contributors@main
+  uses: hi-tech-AI/github-action-contributors@main
   id: contributors
   with:
     filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
     avatarSize: 42
 
 - name: Modify README.md
-  uses: idimetrix/github-action-modify-file-content@main
+  uses: hi-tech-AI/github-action-modify-file-content@main
   with:
     path: README.md
     body: '${{steps.contributors.outputs.htmlList}}'
@@ -97,9 +97,9 @@ Use in `README.md` markdown
 
 As always, thanks to our amazing contributors!
 
-<!--GAMFC--><a href="https://github.com/idimetrix" title="小弟调调"><img src="https://avatars.githubusercontent.com/u/1680273?v=4" width="36;" alt="小弟调调"/></a><!--GAMFC-END-->
+<!--GAMFC--><a href="https://github.com/hi-tech-AI" title="小弟调调"><img src="https://avatars.githubusercontent.com/u/1680273?v=4" width="36;" alt="小弟调调"/></a><!--GAMFC-END-->
 
-Made with [contributors](https://github.com/idimetrix/github-action-contributors).
+Made with [contributors](https://github.com/hi-tech-AI/github-action-contributors).
 ```
 
 Write contributors(**`htmlList`**) to markdown Example:
@@ -110,7 +110,7 @@ Write contributors(**`htmlList`**) to markdown Example:
 
 ```yml
 - name: Generate Contributors Images
-  uses: idimetrix/github-action-contributors@main
+  uses: hi-tech-AI/github-action-contributors@main
   id: contributors
   with:
     filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
@@ -120,7 +120,7 @@ Write contributors(**`htmlList`**) to markdown Example:
     avatarSize: 100  # Set the avatar size.
 
 - name: Modify htmlTable README.md
-  uses: idimetrix/github-action-modify-file-content@main
+  uses: hi-tech-AI/github-action-modify-file-content@main
   with:
     path: README.md
     body: '${{steps.contributors.outputs.htmlTable}}'
@@ -135,7 +135,7 @@ As always, thanks to our amazing contributors!
 
 <!--GAMFC_DELIMITER-->will be replaced here<!--GAMFC_DELIMITER-END-->
 
-Made with [contributors](https://github.com/idimetrix/github-action-contributors).
+Made with [contributors](https://github.com/hi-tech-AI/github-action-contributors).
 ```
 
 Write contributors(**`htmlTable`**) to markdown Example:
@@ -191,9 +191,9 @@ Bot Users:
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/idimetrix">
-        <img src="https://avatars.githubusercontent.com/u/1680273?v=4" width="36;" alt="idimetrix"/><br />
-        <sub><b>idimetrix</b></sub>
+      <a href="https://github.com/hi-tech-AI">
+        <img src="https://avatars.githubusercontent.com/u/1680273?v=4" width="36;" alt="hi-tech-AI"/><br />
+        <sub><b>hi-tech-AI</b></sub>
         </a>
     </td>
   </tr>
@@ -203,8 +203,8 @@ Bot Users:
 ### `htmlList`
 
 ```html
-<a href="https://github.com/idimetrix">
-  <img src="https://avatars.githubusercontent.com/u/1680273?v=4" width="36;" alt="idimetrix"/>
+<a href="https://github.com/hi-tech-AI">
+  <img src="https://avatars.githubusercontent.com/u/1680273?v=4" width="36;" alt="hi-tech-AI"/>
 </a>
 <a href="https://github.com/github-actions[bot]">
   <img src="https://avatars.githubusercontent.com/in/15368?v=4" width="36;" alt="github-actions[bot]"/>
@@ -222,11 +222,11 @@ $ npm run build # compile .ts files.
 
 ## Related
 
-- [Github Release Changelog](https://github.com/idimetrix/changelog-generator) Generator A GitHub Action that compares the commit differences between two branches
-- [Create Tags From](https://github.com/idimetrix/create-tag-action) Auto create tags from commit or package.json.
-- [Create Coverage Badges](https://github.com/idimetrix/coverage-badges-cli) Create coverage badges from coverage reports. (no 3rd parties servers)
-- [Create Coverage Package](https://github.com/idimetrix/github-action-package) Read and modify the contents of `package.json`.
-- [Generated Badges](https://github.com/idimetrix/generated-badges) Create a badge using GitHub Actions and GitHub Workflow CPU time (no 3rd parties servers)
+- [Github Release Changelog](https://github.com/hi-tech-AI/changelog-generator) Generator A GitHub Action that compares the commit differences between two branches
+- [Create Tags From](https://github.com/hi-tech-AI/create-tag-action) Auto create tags from commit or package.json.
+- [Create Coverage Badges](https://github.com/hi-tech-AI/coverage-badges-cli) Create coverage badges from coverage reports. (no 3rd parties servers)
+- [Create Coverage Package](https://github.com/hi-tech-AI/github-action-package) Read and modify the contents of `package.json`.
+- [Generated Badges](https://github.com/hi-tech-AI/generated-badges) Create a badge using GitHub Actions and GitHub Workflow CPU time (no 3rd parties servers)
 
 ## Contributors
 
@@ -234,7 +234,7 @@ As always, thanks to our amazing contributors!
 
 <!--GAMFC--><!--GAMFC-END-->
 
-Made with [contributors](https://github.com/idimetrix/github-action-contributors).
+Made with [contributors](https://github.com/hi-tech-AI/github-action-contributors).
 
 ## License
 
